@@ -1,4 +1,5 @@
-import { arrayCubeRootToJson } from './arrayCubeRootToJson';
+const arrayCubeRootToJson = require('./arrayCubeRootToJson.js').arrayCubeRootToJson;
+
 
 describe('arrayCubeRootToJson', () => {
   it('find cube root of every element of array and return it as A json', () => {
@@ -17,3 +18,4 @@ describe('arrayCubeRootToJson', () => {
     expect(() => { arrayCubeRootToJson([1, 2.12, 4.44, 'abc']) }).toThrow();
   });
 });
+ 
